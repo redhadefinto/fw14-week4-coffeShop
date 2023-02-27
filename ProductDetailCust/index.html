@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Detail Coffe Shop">
+  <title>Product Detail Cust</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="shortcut icon" href="./assets/header/icon-coffe.svg" />
+
+  <!-- Link Font  -->
+  <!-- Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+
+  <!-- Link font Rubik -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="heading">
+      <div class="container-header">
+        <section class="logo-container">
+          <div class="logo">
+            <img src="./assets/header/icon-coffe.svg" alt="logo" width="35px" height="35px" />
+            <h1 class="logo-title">Coffe Shop</h1>
+          </div>
+          <div class="container-hamburger" id="container-hamburger">
+            <ion-icon name="menu-outline" id="hamburger"></ion-icon>
+            <ion-icon name="close-outline" id="icon-x"></ion-icon>
+          </div>
+        </section>
+        <nav class="navLink">
+          <ul>
+            <li><a href="../index.html" style="text-decoration: none; color: #4F5665;">Home</a></li>
+            <li class="active">Product</li>
+            <li>Your Cart</li>
+            <li><a href="../HistoryCust/index.html" style="text-decoration: none; color: #4F5665;">History</a></li>
+          </ul>
+        </nav>
+        <div class="container-hamburger-tablet" id="container-hamburger-tablet">
+          <ion-icon name="menu-outline" id="hamburger-tablet"></ion-icon>
+          <ion-icon name="close-outline" id="icon-x-tablet"></ion-icon>
+        </div>
+        <section class="navInfo">
+          <div class="container-navInfo">
+            <div class="container-search">
+              <img src="./assets/header/Vector.png" alt="Seacrh" width="30" class="pointer" />
+              <input type="search" class="search" value="Search">
+            </div>
+            <div class="message"> 
+              <img src="./assets/header/chat (1) 1.png" alt="message" width="30" class="pointer" />
+            </div>
+            <div class="profile">
+              <a href="../Profile/index.html">
+                <img src="./assets/header/image 39.png" alt="profile" width="30" class="profile-info pointer" height="auto" />
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </header>
+  <main>
+      <div class="hidden-nav" id="hidden-nav">
+        <nav class="navLink-hidden">
+          <ul>
+            <li>
+              <a href="../index.html" style="text-decoration: none; color: #4F5665;">Home</a></li>
+            <li class="active">Product</li>
+            <li>Your Cart</li>
+            <li><a href="../HistoryCust/index.html" style="text-decoration: none; color: #4F5665;">History</a></li>
+          </ul>
+        </nav>
+        <section class="navInfo-hidden">
+          <div class="container-navInfo">
+            <div class="profile" style="display: flex; gap: 3rem;">
+              <a href="../Profile/index.html">
+                <img src="./assets/header/image 39.png" alt="profile" width="40" class="profile-info pointer" height="auto" />
+              </a>
+              <img src="./assets/header/chat (1) 1.png" alt="message" width="40" class="pointer" height="auto" />
+            </div>
+            <div class="container-search">
+              <img src="./assets/header/Vector.png" alt="Seacrh" width="30" class="pointer" height="auto" />
+              <label for="search">
+                <input type="search" class="search" value="Search" id="search" />
+                <!-- search -->
+              </label>
+            </div>
+          </div>
+        </section>
+        </div>
+    <div class="main-container">
+      <section class="main-body">
+        <section class="body-left">
+          <div class="container-body-left">
+            <div class="center-body">
+              <div class="body-left-header">
+                <p class="description">Favorite & Promo > <span class="bold">Cold Brew</span></p>
+              </div>
+              <div class="img-body-left"></div>
+              <h1 class="title-body">COLD BREW</h1>
+              <h2 class="price">IDR 30.000</h2>
+              <button class="add">Add to Cart</button>
+              <button class="ask">Ask a Staff</button>
+          </div>
+        </div>
+        </section>
+        <section class="body-right">
+          <div class="container-body-right">
+            <div class="container-size">
+              <p class="schedule">Delivery only on <span class="bold">Monday to <br />friday </span> at <span class="bold">1 - 7 pm</span></p>
+              <p class="description-body">
+                Cold brewing is a method of brewing that combines ground coffee and cool water and uses time instead of heat to extract the flavor. It is brewed in small batches and steeped for as long as 48 hours.
+              </p>
+              <h3 class="title-size">Choose a size</h3>
+              <div class="container-choose-size">
+                <div class="choose-size">
+                  <label for="r">
+                    <input type="radio" name="size" id="r">
+                    R
+                    <span></span>
+                  </label>
+                  <label for="l">
+                    <input type="radio" name="size" id="l">
+                    L
+                    <span></span>
+                  </label>
+                  <label for="xl">
+                    <input type="radio" name="size" id="xl">
+                    XL
+                    <span></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="methods">
+              <div class="container-methods">
+                <div class="header-methods">
+                  <h3 class="methods-title">Choose Delivery Methods</h3>
+                </div>
+                <div class="choose-methods">
+                  <label for="dine">
+                    <input type="radio" name="delivery-method" id="dine">
+                    <span></span>
+                    <h4>Dine in</h4>
+                  </label>
+                  <label for="door">
+                    <input type="radio" name="delivery-method" id="door">
+                    <span></span>
+                    <h4>Door Delivery</h4>
+                  </label>
+                  <label for="pick">
+                    <input type="radio" name="delivery-method" id="pick">
+                    <span></span>
+                    <h4>Pick up</h4>
+                  </label>
+                </div>
+                <div class="container-set-time">
+                  <p class="set-time">Set time :</p>
+                  <input type="text" class="set-time-value" value="Enter the time you’ll arrived" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="body-footer">
+        <div class="container-body-footer">
+          <div class="card-product">
+            <div class="container-card-img">
+              <div class="img-card"></div>
+            </div>
+            <div class="body-card">
+              <p class="title-card">COLD BREW</p>
+              <p class="description-card">x1 (Large)</p>
+              <p class="description-card">x1 (Regular)</p>
+            </div>
+            <div class="footer-card">
+              <button class="minus">-</button>
+              <input type="text" class="value" value="2">
+              <button class="plus">+</button>
+            </div>
+          </div>
+          <div class="container-btn">
+            <button class="btn-checkout">CHECKOUT</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="mainFooter">
+      <section class="info">
+        <div class="logo-footer">
+          <a href="../index.html" style="display: flex; align-items: center; text-decoration: none;">
+            <img src="./assets/header/icon-coffe.svg" alt="logo" width="50px" height="50px" />
+            <h1 class="logo-title" style="color: #6A4029;">Coffe Shop</h1>
+          </a>
+        </div>
+        <p class="info-description">Coffee Shop is a store that sells some <br /> good meals, and especially coffee. We <br /> provide high quality beans</p>
+        <div class="media">
+          <div class="sosialMedia" style="margin-left: 0;">
+            <img src="./assets/Footer/Socmed/Facebook.png" alt="" width="100%">
+          </div>
+          <div class="sosialMedia">
+            <img src="./assets/Footer/Socmed/twitter.png" alt="" width="100%">
+          </div>
+          <div class="sosialMedia">
+            <img src="./assets/Footer/Socmed/Instagram.png" alt="" width="100%">
+          </div>
+        </div>
+        <p class="copyRight">&copy; 2020 CoffeStore.
+      </section>
+      <section class="menu">
+        <div class="menu-footer">
+          <h4 class="menu-heading">Product</h4>
+          <ul>
+            <li>Download</li>
+            <li>Pricing</li>
+            <li>Locations</li>
+            <li>Countries</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div class="faq-footer">
+          <h4 class="menu-heading">Engage</h4>
+          <ul>
+            <li>Coffe Shop ? </li>
+            <li>FAQ</li>
+            <li>About Us</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
