@@ -111,3 +111,10 @@ body {
   opacity: 1;
   cursor: pointer;
 }
+
+.error {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 2rem;
+}
