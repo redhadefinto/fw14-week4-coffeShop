@@ -930,7 +930,7 @@ ul li:hover {
     font-size: 45px;
   }
   .hidden-nav {
-    height: 50vh;
+    height: 60vh;
     z-index: 999;
   }
   /* Heading End */
@@ -1136,7 +1136,7 @@ ul li:hover {
   }
   .hidden-nav {
     z-index: 99;
-    height: 50vh;
+    height: 60vh;
   }
   /* Heading End */
 

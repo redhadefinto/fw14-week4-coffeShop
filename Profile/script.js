@@ -38,15 +38,18 @@ const phoneError = document.getElementById('phone-error')
 const DNameError = document.getElementById('display-name-error')
 const firstNameError = document.getElementById('first-name-error')
 const lastNameError = document.getElementById('last-name-error')
+const dateError = document.getElementById('date-error')
 save.addEventListener('click', () => {
   // element value
   const email = document.getElementById("email").value;
   const adress = document.getElementById("adress").value;
   const DName = document.getElementById("display-name").value;
   const phone = document.getElementById("phone").value;
+  const cekPhone = Number(phone)
   const firstName = document.getElementById("first-name").value;
   const lastName = document.getElementById("last-name").value;
-  
+  const date = document.getElementById('date').value;
+  const gender = document.querySelector("input[type=radio]:checked").value;
   // const RegexPhone = /^[0-9]+$/g
   const dBlockEmail = () => {
     return (emailError.style.display = "block");
@@ -65,6 +68,9 @@ save.addEventListener('click', () => {
   };
   const dBlocklastName = () => {
     return (lastNameError.style.display = "block");
+  };
+  const dBlockDate = () => {
+    return (dateError.style.display = "block");
   };
 
   // style none element
@@ -86,6 +92,9 @@ save.addEventListener('click', () => {
   const dNoneLastName = () => {
     return (lastNameError.style.display = "none");
   };
+  const dNoneDate = () => {
+    return (dateError.style.display = "none");
+  };
 
   // cek kosong
   if (email == "") {
@@ -96,6 +105,7 @@ save.addEventListener('click', () => {
     dNoneDName();
     dNoneFisrtName();
     dNoneLastName();
+    dNoneDate();
     return;
   } else if (adress == "") {
     dBlockadress();
@@ -105,6 +115,7 @@ save.addEventListener('click', () => {
     dNoneDName();
     dNoneFisrtName();
     dNoneLastName();
+    dNoneDate();
     return;
   } else if (phone == "") {
     dBlockPhone();
@@ -114,6 +125,7 @@ save.addEventListener('click', () => {
     dNoneDName();
     dNoneFisrtName();
     dNoneLastName();
+    dNoneDate();
     return;
   } else if (DName == "") {
     dBlockDName();
@@ -123,6 +135,7 @@ save.addEventListener('click', () => {
     dNoneAdress();
     dNoneFisrtName();
     dNoneLastName();
+    dNoneDate();
     return;
   } else if (firstName == "") {
     dBlockFirstName();
@@ -132,6 +145,7 @@ save.addEventListener('click', () => {
     dNoneAdress();
     dNoneDName();
     dNoneLastName();
+    dNoneDate();
     return;
   } else if (lastName == "") {
     dBlocklastName();
@@ -141,7 +155,17 @@ save.addEventListener('click', () => {
     dNoneAdress();
     dNoneDName();
     dNoneFisrtName();
+    dNoneDate()
     return;
+  } else if (date == "") {
+    dBlockDate();
+    dateError.innerHTML = `Date harus di isi`;
+    dNoneEmail();
+    dNonePhone();
+    dNoneAdress();
+    dNoneDName();
+    dNoneFisrtName();
+    dNoneLastName()
   }
 
   // cek value
@@ -153,6 +177,7 @@ save.addEventListener('click', () => {
     dNoneDName();
     dNoneFisrtName();
     dNoneLastName();
+    dNoneDate();
     return;
   } else if (!email.includes(".")) {
     emailError.innerHTML = `Input wajib menggunakan .`;
@@ -162,13 +187,24 @@ save.addEventListener('click', () => {
     dNoneDName();
     dNoneFisrtName();
     dNoneLastName();
+    dNoneDate();
+    return;
+  } else if (isNaN(cekPhone)) {
+    dBlockPhone()
+    phoneError.innerHTML = `noHp harus berisikan angka`;
+    dNoneEmail();
+    dNoneAdress();
+    dNoneDName();
+    dNoneFisrtName();
+    dNoneLastName();
+    dNoneDate();
     return;
   } else {
     const data = [];
-    const newData = { email, adress, phone, DName, firstName, lastName };
+    const newData = { email, adress, phone, DName, firstName, lastName, date, gender };
     data.push(newData);
     console.log(data);
-    return data;
+    return;
   }
 })
 
