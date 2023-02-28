@@ -9,7 +9,7 @@ const fetchData = async () => {
             return response.json()
         })
         .catch((e) => {
-          throw new Error('Server Not Found', e)
+          throw new Error(e)
         })
       };
 
@@ -42,7 +42,7 @@ const renderData = () => {
     const h2 = document.createElement('h2');
     h2.classList.add('error')
     document.body.appendChild(h2)
-    h2.innerHTML = `${e}`
+    h2.innerHTML = `Data Not Found.... <br/> ${e.message}`
   })
 }
 

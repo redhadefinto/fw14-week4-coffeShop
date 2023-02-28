@@ -918,7 +918,7 @@ ul li:hover {
     justify-content: flex-start;
   }
   .container-hamburger-tablet {
-    display: none;
+    display: block;
     flex: 1;
     display: flex;
     justify-content: flex-end;
@@ -1124,11 +1124,11 @@ ul li:hover {
     justify-content: flex-start;
   }
   .container-hamburger-tablet {
-    /* display: none; */
+    display: block;
     flex: 1;
-    /* display: flex; */
+    display: flex;
     justify-content: flex-end;
-    padding-right: 20px;
+    padding-right: 2rem;
     /* border: 2px solid red; */
   }
   ion-icon {

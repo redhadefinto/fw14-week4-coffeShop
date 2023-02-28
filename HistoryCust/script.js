@@ -14,7 +14,7 @@ for (let i = 1; i <= 15; i++) {
     <div class="right-card">
       <p class="title-card">Veggie tomato mix</p>
       <p class="price-card">IDR 34.000</p>
-      <p class="description-card">Delivered</p>
+      <p class="description-card">Delivered ${i}</p>
     </div>
     <div class="icon-sampah"></div>
     <div class="icon-x" id="icon-x">
